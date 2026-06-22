@@ -1,0 +1,176 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  --sm-weight: 400;
+  --md-weight: 500;
+  --lg-weight: 700;
+}
+
+@font-face {
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Stone-100);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.figure {
+  display: none;
+}
+header {
+  height: 200px;
+  background: url(../images/image-omelette.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: var(--White);
+  padding: 36px 30px;
+}
+h1,
+h2 {
+  font-family: "Young Serif";
+}
+h1 {
+  color: var(--Stone-900);
+  font-weight: var(--sm-weight);
+  line-height: 1;
+  font-size: 36px;
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: var(--Brown-800);
+  font-weight: var(--md-weight);
+  line-height: 1;
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+p,
+ul,
+ol,
+li,
+table {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+p {
+  color: var(--Stone-600);
+  font-size: 16px;
+  margin-bottom: 28px;
+  text-align: left;
+  font-weight: var(--sm-weight);
+}
+h3 {
+  font-family: "Outfit", sans-serif;
+  color: var(--Rose-800);
+  font-weight: var(--lg-weight);
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.preparation-info {
+  background-color: var(--Rose-50);
+  padding: 18px 26px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+
+ul {
+  padding: 0 20px;
+}
+ul li::marker {
+  color: var(--Rose-800);
+  font-size: 12px;
+}
+
+li {
+  color: var(--Stone-600);
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+ol {
+  padding: 0 0 0 26px;
+}
+ol li::marker {
+  color: var(--Rose-800);
+  font-family: "Outfit", sans-serif;
+  font-weight: var(--lg-weight);
+}
+span {
+  color: var(--Stone-600);
+  font-weight: var(--lg-weight);
+}
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 32px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+tr {
+  border-bottom: 1px solid #ddd;
+}
+tr:last-child {
+  border-bottom: none;
+}
+td {
+  color: var(--Brown-800);
+  font-weight: var(--lg-weight);
+  padding: 10px 10px 10px 0;
+}
+th {
+  color: var(--Stone-600);
+  font-weight: var(--sm-weight);
+  padding: 10px 0px 10px 34px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: none;
+  }
+  .figure {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 28px;
+  }
+  .container {
+    width: 52%;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 36px 36px 24px 36px;
+  }
+}
