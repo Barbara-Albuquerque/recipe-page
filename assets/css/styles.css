@@ -72,7 +72,7 @@ h2 {
   color: var(--Brown-800);
   font-weight: var(--md-weight);
   line-height: 1;
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 28px;
 }
 p,
@@ -169,7 +169,7 @@ th {
   }
   .container {
     width: 52%;
-    margin: 100px auto;
+    margin: 110px auto;
     border-radius: 20px;
     padding: 36px 36px 24px 36px;
   }
